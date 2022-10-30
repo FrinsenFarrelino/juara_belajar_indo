@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import "./index.css";
+import logo from "./assets/logo192.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,12 +13,12 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <a href="#" class="flex items-center">
-                  <img
-                    src="https://flowbite.com/docs/images/logo.svg"
-                    class="mr-3 h-6 sm:h-9"
-                    alt="Flowbite Logo"
-                  />
+                <a
+                  href="#"
+                  class="flex items-center"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <img src={logo} class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
                   <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
                     Juara Belajar Indonesia
                   </span>
@@ -27,18 +28,25 @@ const Navbar = () => {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <a
+                  href="#about"
+                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Tentang Kami
+                </a>
+
+                <a
                   href="#kursus"
-                  className=" hover:text-white text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+                  className="hover:text-white text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Kursus
                 </a>
 
-                <a
+                {/* <a
                   href="#blog"
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Blog
-                </a>
+                </a> */}
 
                 <a
                   href="#ulasan"
@@ -48,10 +56,10 @@ const Navbar = () => {
                 </a>
 
                 <a
-                  href="#about"
+                  href="#faq"
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Tentang Kami
+                  FAQ
                 </a>
               </div>
             </div>
@@ -115,31 +123,43 @@ const Navbar = () => {
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
+                  href="#about"
+                  className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  Tentang Kami
+                </a>
+
+                <a
                   href="#kursus"
                   className="hover:text-white text-gray-300 block px-3 py-2 rounded-md text-base font-medium"
+                  onClick={() => setIsOpen(!isOpen)}
                 >
                   Kursus
                 </a>
 
-                <a
+                {/* <a
                   href="#blog"
                   className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  onClick={() => setIsOpen(!isOpen)}
                 >
                   Blog
-                </a>
+                </a> */}
 
                 <a
                   href="#ulasan"
                   className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  onClick={() => setIsOpen(!isOpen)}
                 >
                   Ulasan
                 </a>
 
                 <a
-                  href="#about"
+                  href="#faq"
                   className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  onClick={() => setIsOpen(!isOpen)}
                 >
-                  Tentang Kami
+                  FAQ
                 </a>
               </div>
             </div>

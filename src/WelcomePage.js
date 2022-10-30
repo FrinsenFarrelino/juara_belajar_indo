@@ -3,11 +3,11 @@ import React from "react";
 const WelcomePage = () => {
   return (
     <div className="py-10 px-12 md:px-16 bg-gradient-to-b from-sky-200 to-white">
-      <h1 className="font-bold text-4xl m-5">
+      <h1 className="font-bold text-6xl m-5">
         Selamat Datang di{" "}
         <span className="text-blue-800">Juara Belajar Indonesia</span>!
       </h1>
-      <p>
+      <p className="text-justify">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ullam
         iusto quo fuga ipsum repellendus vero, labore, nostrum architecto
         laboriosam cumque et consequuntur minus soluta ipsam voluptate suscipit
