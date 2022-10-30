@@ -19,7 +19,7 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                 >
                   <img src={logo} class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-                  <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+                  <span class="self-center text-xl font-semibold whitespace-nowrap text-white">
                     Juara Belajar Indonesia
                   </span>
                 </a>
