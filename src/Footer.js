@@ -3,7 +3,7 @@ import logo from "./assets/logo192.png";
 
 const Footer = () => {
   return (
-    <footer class="p-4 sm:p-6 bg-gray-900">
+    <footer class="p-4 sm:p-6 bg-red-900">
       <div class="flex justify-center">
         <div class="mb-6 md:mb-0 flex">
           <a href="#" class="flex items-center">
@@ -14,9 +14,9 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+      <hr class="my-6 sm:mx-auto border-red-700 lg:my-8" />
       <div class="sm:flex justify-center sm:items-center sm:justify-between">
-        <span class="text-sm  sm:text-center text-gray-400">
+        <span class="text-sm  sm:text-center text-gray-200">
           © 2022{" "}
           <a href="#" class="hover:underline">
             Juara Belajar Indonesia
@@ -24,7 +24,7 @@ const Footer = () => {
           . All Rights Reserved.
         </span>
         <div class="flex mt-4 space-x-6 justify-center sm:mt-0">
-          <a href="#" class="text-gray-500 hover:text-white">
+          <a href="#" class="text-gray-200 hover:text-white">
             <svg
               class="w-5 h-5"
               fill="currentColor"
@@ -39,7 +39,7 @@ const Footer = () => {
             </svg>
             <span class="sr-only">Facebook page</span>
           </a>
-          <a href="#" class="text-gray-500 hover:text-white">
+          <a href="#" class="text-gray-200 hover:text-white">
             <svg
               class="w-5 h-5"
               fill="currentColor"
@@ -54,7 +54,7 @@ const Footer = () => {
             </svg>
             <span class="sr-only">Instagram page</span>
           </a>
-          <a href="#" class="text-gray-500 hover:text-white">
+          <a href="#" class="text-gray-200 hover:text-white">
             <svg
               class="w-5 h-5"
               fill="currentColor"

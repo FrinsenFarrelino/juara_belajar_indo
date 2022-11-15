@@ -5,7 +5,7 @@ const TentangKami = () => {
   return (
     <div id="about" className="py-20 px-12 md:px-16">
       <h1 className="text-4xl font-bold mb-10">
-        Apa itu <span className="text-blue-800">Juara Belajar Indonesia</span>?
+        Apa itu <span className="text-red-800">Juara Belajar Indonesia</span>?
       </h1>
       <div className="md:flex md:items-center mb-3">
         <div className="md:mr-16">
